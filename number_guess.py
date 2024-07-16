@@ -1,12 +1,12 @@
 from modules.art import logo
-import random
+from random import randint
 
 print(logo)
 print("Welcome to GUESS THAT NUMBER!")
 
 def computer_number():
     """Computer creates a random number between 1 and 100"""
-    choice = random.randint(1, 100)
+    choice = randint(1, 100)
     return choice
 
 computers_number = computer_number()
